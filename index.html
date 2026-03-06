@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pedro Henrique — Front-End Dev</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Fira+Code:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ── CURSOR ── -->
+    <div id="cur"></div>
+    <div id="cur-ring"></div>
+
+    <!-- ── NAV ── -->
+    <nav>
+      <a href="#hero" class="nav-logo">PH<span>.</span>dev</a>
+      <ul class="nav-links">
+        <li><a href="#about">~/sobre</a></li>
+        <li><a href="#projects">~/projetos</a></li>
+        <li><a href="#skills">~/skills</a></li>
+        <li><a href="#contact">~/contato</a></li>
+      </ul>
+    </nav>
+
+    <!-- ══════════════════════════════════════════════
+     HERO
+══════════════════════════════════════════════ -->
+    <section id="hero">
+      <div class="hero-grid-bg"></div>
+      <div class="glow1"></div>
+      <div class="glow2"></div>
+
+      <div style="position: relative; z-index: 2">
+        <div class="hero-tag" id="htag">
+          Front-End Developer · Recife, PE · 22 anos
+        </div>
+        <h1 class="hero-name">
+          <span class="a1">Pedro</span><br />
+          <span class="a2">Henrique</span>
+        </h1>
+        <p class="hero-desc">
+          Desenvolvedor com foco em <span>interfaces modernas</span>, APIs e
+          dados.<br />
+          Transformando linhas de código em experiências que importam.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-neon"><span>Ver Projetos</span></a>
+          <a href="#contact" class="btn-ghost">Entrar em contato</a>
+        </div>
+      </div>
+
+      <div class="floating-code">
+        <div><span class="cm">// Pedro Henrique, 22</span></div>
+        <div><span class="kw">const</span> dev = {</div>
+        <div>
+          &nbsp;&nbsp;stack: [<span class="str">'React'</span>,
+          <span class="str">'JS'</span>, <span class="str">'Python'</span>],
+        </div>
+        <div>&nbsp;&nbsp;cidade: <span class="str">'Recife, PE'</span>,</div>
+        <div>
+          &nbsp;&nbsp;status: <span class="str">'open to work ✓'</span>,
+        </div>
+        <div>
+          &nbsp;&nbsp;<span class="fn">repos</span>: <span class="str">9</span>
+        </div>
+        <div>};</div>
+        <br />
+        <div>
+          <span class="fn">dev</span>.<span class="fn">build</span>()
+          <span class="cm">// → 🚀</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════
+     SOBRE MIM
+══════════════════════════════════════════════ -->
+    <div class="wrap" id="about">
+      <div class="sec-header reveal">
+        <span class="sec-num">01</span>
+        <h2 class="sec-title">Sobre mim</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="about-grid">
+        <!-- Coluna esquerda: frase + timeline -->
+        <div class="reveal">
+          <p class="about-statement">
+            Criando a web<br />
+            <span class="hl">com propósito</span><br />
+            e <span class="hl2">precisão.</span>
+          </p>
+
+          <div class="tl" style="margin-top: 48px">
+            <div class="tl-item">
+              <span class="tl-year">2025 →</span>
+              <div>
+                <div class="tl-role">Gerente de Projetos · Estágio</div>
+                <div class="tl-co" style="color: var(--neon); opacity: 0.8">
+                  Cards Tecnologia ✓ atual
+                </div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year">2025 →</span>
+              <div>
+                <div class="tl-role">Ciência da Computação</div>
+                <div class="tl-co">Faculdade Estácio · Cursando</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year">2023–25</span>
+              <div>
+                <div class="tl-role">Agente Adm. Júnior</div>
+                <div class="tl-co">Unika Serviços</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year">2022–23</span>
+              <div>
+                <div class="tl-role">Analista de Ativos · Estágio</div>
+                <div class="tl-co">Datainfo · Power BI · Scrum</div>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="tl-year">2022–25</span>
+              <div>
+                <div class="tl-role">Tecnólogo ADS</div>
+                <div class="tl-co">Faculdade Estácio · Concluído</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Coluna direita: bio + stats -->
+        <div class="reveal">
+          <div class="about-body">
+            <p>
+              Tenho 22 anos, sou de Recife, Pernambuco, e sou apaixonado por
+              construir interfaces que unem estética e funcionalidade.
+            </p>
+            <p>
+              Concluí o tecnólogo em Análise e Desenvolvimento de Sistemas e
+              estou cursando Bacharelado em Ciência da Computação. No caminho,
+              acumulei experiência com APIs, bancos de dados, relatórios
+              analíticos e desenvolvimento web.
+            </p>
+            <p>
+              Estou em busca de uma oportunidade onde eu possa crescer como
+              desenvolvedor e contribuir com projetos que fazem diferença.
+            </p>
+            <p style="margin-top: 20px; color: #2e2e50">
+              &gt; idiomas: Inglês A2 · Espanhol A2<br />
+              &gt; localização: Recife, PE<br />
+              &gt; disponibilidade:
+              <span style="color: var(--neon)">imediata ✓</span>
+            </p>
+          </div>
+
+          <div style="margin-top: 40px; display: flex; gap: 48px">
+            <div class="stat">
+              <div class="stat-n" style="color: var(--neon)">9</div>
+              <div class="stat-l">repos</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n" style="color: var(--neon2)">3+</div>
+              <div class="stat-l">anos exp.</div>
+            </div>
+            <div class="stat">
+              <div class="stat-n" style="color: var(--neon3)">∞</div>
+              <div class="stat-l">curiosidade</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+     PROJETOS
+══════════════════════════════════════════════ -->
+    <div class="wrap" id="projects">
+      <div class="sec-header reveal">
+        <span class="sec-num">02</span>
+        <h2 class="sec-title">Projetos</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="proj-grid">
+        <!-- 001 FitApp -->
+        <div class="proj-card proj-featured reveal">
+          <div class="proj-num">001 / MOBILE APP · DESTAQUE</div>
+          <h3 class="proj-title">
+            FitApp<br /><span
+              style="font-size: 0.85rem; font-weight: 400; color: var(--muted)"
+              >Monitoramento de Saúde</span
+            >
+          </h3>
+          <p class="proj-desc">
+            Aplicativo móvel de monitoramento de saúde com indicadores de
+            cardio, estresse, sono e temperatura corporal. APK disponível para
+            download — v1.0 e v2.0 publicadas.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">React Native</span>
+            <span class="proj-tag">Expo</span>
+            <span class="proj-tag">Firebase</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Mobile</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/fitapp-monitoramento"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #f5c542"></span
+              >JavaScript</span
+            >
+          </div>
+        </div>
+
+        <!-- 002 Nogs Store -->
+        <div class="proj-card reveal">
+          <div class="proj-num">002 / E-COMMERCE</div>
+          <h3 class="proj-title">Nogs Store</h3>
+          <p class="proj-desc">
+            Site de demonstração com carrossel interativo exibindo produtos
+            Apple (Watch, AirPods Max Pro, Vision Pro). Animações CSS e
+            navegação dinâmica em JavaScript.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">Carrossel</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/Nogs-Store"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #563d7c"></span
+              >CSS</span
+            >
+          </div>
+        </div>
+
+        <!-- 003 Landing Page -->
+        <div class="proj-card reveal">
+          <div class="proj-num">003 / LANDING PAGE</div>
+          <h3 class="proj-title">Landing Page</h3>
+          <p class="proj-desc">
+            Landing page responsiva com foco em layout moderno, hierarquia
+            visual e boas práticas de CSS. Ideal para apresentação de produto ou
+            serviço.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">Responsivo</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/Landing-page"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #563d7c"></span
+              >CSS</span
+            >
+          </div>
+        </div>
+
+        <!-- 004 Netflix Login -->
+        <div class="proj-card reveal">
+          <div class="proj-num">004 / UI CLONE</div>
+          <h3 class="proj-title">Netflix Login</h3>
+          <p class="proj-desc">
+            Recriação fiel da tela de login da Netflix. Exercício de
+            pixel-perfect CSS, responsividade e atenção a detalhes de UI/UX de
+            produto real.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">UI Clone</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/Netflix-Login"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #563d7c"></span
+              >CSS</span
+            >
+          </div>
+        </div>
+
+        <!-- 005 Calculadora -->
+        <div class="proj-card reveal">
+          <div class="proj-num">005 / APP</div>
+          <h3 class="proj-title">Calculadora Virtual</h3>
+          <p class="proj-desc">
+            Calculadora funcional com operações matemáticas básicas. Projeto
+            focado em lógica JavaScript, manipulação do DOM e design de
+            interface intuitiva.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">HTML</span>
+            <span class="proj-tag">CSS</span>
+            <span class="proj-tag">JavaScript</span>
+            <span class="proj-tag">DOM</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/Calculadora-Virtual"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #f5c542"></span
+              >JavaScript</span
+            >
+          </div>
+        </div>
+
+        <!-- 006 Projeto Cartas -->
+        <div class="proj-card reveal">
+          <div class="proj-num">006 / C · FACULDADE</div>
+          <h3 class="proj-title">
+            Projeto Cartas<br /><span
+              style="font-size: 0.9rem; font-weight: 400; color: var(--muted)"
+              >Estácio</span
+            >
+          </h3>
+          <p class="proj-desc">
+            Projeto acadêmico desenvolvido em C durante o curso de ADS. Explora
+            lógica de programação, estruturas de dados e algoritmos de ordenação
+            e busca.
+          </p>
+          <div class="proj-tags">
+            <span class="proj-tag">C</span>
+            <span class="proj-tag">Algoritmos</span>
+            <span class="proj-tag">Faculdade</span>
+          </div>
+          <div class="proj-footer">
+            <a
+              href="https://github.com/Phmelo203/Projetocartas.estacio"
+              target="_blank"
+              class="proj-link"
+              >Ver no GitHub →</a
+            >
+            <span class="proj-lang"
+              ><span class="lang-dot" style="background: #555555"></span>C</span
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+     SKILLS
+══════════════════════════════════════════════ -->
+    <div class="wrap" id="skills">
+      <div class="sec-header reveal">
+        <span class="sec-num">03</span>
+        <h2 class="sec-title">Skills</h2>
+        <div class="sec-line"></div>
+      </div>
+
+      <div class="sk-layout">
+        <!-- Coluna esquerda -->
+        <div class="reveal">
+          <p class="sk-intro">
+            Stack <span class="hl">moderna</span>,<br />fundamentos
+            <span class="hl">sólidos.</span>
+          </p>
+          <p class="sk-bio" style="margin-top: 20px">
+            Sempre buscando dominar novas ferramentas. Cada projeto é uma
+            oportunidade de aprender algo novo e evoluir como desenvolvedor.
+          </p>
+
+          <div class="sk-box">
+            <div class="sk-box-label">&gt; formação & certificações</div>
+            <div class="sk-box-row">
+              <div>
+                ✓ ADS — Faculdade Estácio <span class="ok">(concluído)</span>
+              </div>
+              <div>
+                → CC — Faculdade Estácio <span class="go">(cursando)</span>
+              </div>
+              <div>✓ Metodologia Ágil · Scrum</div>
+              <div>✓ Git / GitHub</div>
+              <div>✓ Power BI</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Grid de skills -->
+        <div class="sk-grid reveal">
+          <div>
+            <div class="sk-group-title">Front-End</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>HTML5</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>CSS3</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>JavaScript</div>
+          </div>
+          <div>
+            <div class="sk-group-title" style="color: var(--neon2)">
+              Back-End & Dados
+            </div>
+            <div class="sk-item"><span class="sk-dot d2"></span>Python</div>
+            <div class="sk-item"><span class="sk-dot d2"></span>MySQL</div>
+            <div class="sk-item"><span class="sk-dot d2"></span>APIs REST</div>
+            <div class="sk-item"><span class="sk-dot d2"></span>Power BI</div>
+          </div>
+          <div>
+            <div class="sk-group-title" style="color: var(--neon3)">
+              Ferramentas
+            </div>
+            <div class="sk-item">
+              <span class="sk-dot d3"></span>Git / GitHub
+            </div>
+            <div class="sk-item"><span class="sk-dot d3"></span>Bootstrap</div>
+            <div class="sk-item"><span class="sk-dot d3"></span>Figma</div>
+          </div>
+          <div>
+            <div class="sk-group-title">Aprendendo</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>React</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>Next.js</div>
+            <div class="sk-item"><span class="sk-dot d1"></span>Tailwind</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════
+     CONTATO
+══════════════════════════════════════════════ -->
+    <div id="contact">
+      <div class="ct-big reveal">
+        <span class="outline">Vamos</span><br />
+        <span class="neon">trabalhar</span><br />
+        <span class="outline">juntos?</span>
+      </div>
+
+      <div
+        style="
+          display: grid;
+          grid-template-columns: 1fr 1.2fr;
+          gap: 64px;
+          align-items: start;
+          padding: 0 48px;
+        "
+        class="reveal"
+      >
+        <!-- Links rápidos -->
+        <div>
+          <div style="display: grid; gap: 2px">
+            <div class="ct-card">
+              <div class="ct-label">// e-mail</div>
+              <span class="ct-val">ph.melo20031974@gmail.com</span>
+            </div>
+            <div class="ct-card">
+              <div class="ct-label">// linkedin</div>
+              <a
+                href="https://www.linkedin.com/in/phmelosilv"
+                target="_blank"
+                class="ct-val"
+                >linkedin.com/in/phmelosilv</a
+              >
+            </div>
+            <div class="ct-card">
+              <div class="ct-label">// github</div>
+              <a
+                href="https://github.com/Phmelo203"
+                target="_blank"
+                class="ct-val"
+                >github.com/Phmelo203</a
+              >
+            </div>
+            <div class="ct-card">
+              <div class="ct-label">// estágio atual</div>
+              <span class="ct-val" style="color: var(--neon)"
+                >Cards Tecnologia ✓</span
+              >
+            </div>
+          </div>
+          <div
+            style="margin-top: 20px; display: flex; gap: 12px; flex-wrap: wrap"
+          >
+            <a
+              href="https://github.com/Phmelo203"
+              target="_blank"
+              class="btn-ghost"
+              >GitHub</a
+            >
+            <a
+              href="https://www.linkedin.com/in/phmelosilv"
+              target="_blank"
+              class="btn-ghost"
+              >LinkedIn</a
+            >
+          </div>
+        </div>
+
+        <!-- Formulário -->
+        <div
+          style="
+            background: var(--card);
+            border: 1px solid var(--border);
+            padding: 36px;
+          "
+        >
+          <div
+            style="
+              font-size: 0.62rem;
+              letter-spacing: 0.2em;
+              text-transform: uppercase;
+              color: var(--neon);
+              margin-bottom: 28px;
+            "
+          >
+            &gt; enviar mensagem
+          </div>
+
+          <div class="form-field">
+            <label for="ct-nome">Seu nome</label>
+            <input id="ct-nome" type="text" placeholder="João Silva" />
+          </div>
+
+          <div class="form-field">
+            <label for="ct-email">Seu e-mail</label>
+            <input id="ct-email" type="email" placeholder="voce@email.com" />
+          </div>
+
+          <div class="form-field" style="margin-bottom: 24px">
+            <label for="ct-msg">Mensagem</label>
+            <textarea
+              id="ct-msg"
+              rows="4"
+              placeholder="Olá Pedro, gostaria de conversar sobre..."
+            ></textarea>
+          </div>
+
+          <button class="form-btn" onclick="sendEmail()">
+            Enviar Mensagem →
+          </button>
+          <div id="ct-feedback" class="form-feedback"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ── FOOTER ── -->
+    <footer>
+      <div>© 2025 <em>Pedro Henrique</em> da Silva Melo</div>
+      <div>Front-End Developer · <em>Recife, PE</em></div>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

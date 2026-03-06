@@ -1,5 +1,5 @@
 /* ================================================
-   main.js — Pedro Henrique Portfólio
+main.js — Pedro Henrique Portfólio
    ================================================ */
 
 // ── CURSOR CUSTOMIZADO ──────────────────────────
@@ -64,26 +64,46 @@ if (tag) {
   }, 38);
 }
 
+/// ── EMAILJS CONFIG ──────────────────────────────
+emailjs.init('pOdDeQpTjpdokALZe');
+
 // ── FORMULÁRIO DE CONTATO ───────────────────────
 function sendEmail() {
   const nome  = document.getElementById('ct-nome').value.trim();
   const email = document.getElementById('ct-email').value.trim();
   const msg   = document.getElementById('ct-msg').value.trim();
   const fb    = document.getElementById('ct-feedback');
+  const btn   = document.getElementById('ct-btn');
 
-  // Validação
   if (!nome || !email || !msg) {
-    fb.style.color   = 'var(--neon3)';
-    fb.textContent   = '> preencha todos os campos antes de enviar.';
+    fb.style.color = 'var(--neon3)';
+    fb.textContent = '> preencha todos os campos antes de enviar.';
     return;
   }
 
-  // Monta e abre mailto
-  const subject = encodeURIComponent('Contato via Portfólio — ' + nome);
-  const body    = encodeURIComponent('Nome: ' + nome + '\nE-mail: ' + email + '\n\n' + msg);
+  btn.textContent = 'Enviando...';
+  btn.disabled    = true;
+  fb.style.color  = 'var(--muted)';
+  fb.textContent  = '> aguarde...';
 
-  window.location.href = 'mailto:ph.melo20031974@gmail.com?subject=' + subject + '&body=' + body;
-
-  fb.style.color = 'var(--neon)';
-  fb.textContent = '> abrindo seu cliente de e-mail... ✓';
+  emailjs.send('service_3w5j0sj', 'template_0fcs2wt', {
+    from_name:  nome,
+    from_email: email,
+    message:    msg,
+  })
+  .then(() => {
+    fb.style.color  = 'var(--neon)';
+    fb.textContent  = '> mensagem enviada com sucesso! ✓';
+    btn.textContent = 'Enviar Mensagem →';
+    btn.disabled    = false;
+    document.getElementById('ct-nome').value  = '';
+    document.getElementById('ct-email').value = '';
+    document.getElementById('ct-msg').value   = '';
+  })
+  .catch(() => {
+    fb.style.color  = 'var(--neon3)';
+    fb.textContent  = '> erro ao enviar. tente novamente.';
+    btn.textContent = 'Enviar Mensagem →';
+    btn.disabled    = false;
+  });
 }
